@@ -22,6 +22,10 @@ export default function Banner() {
         loop={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
         className="mySwiper"
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
       >
         <SwiperSlide>
           <img src={Banner1} alt="Banner" className="w-full h-full object-cover" />
