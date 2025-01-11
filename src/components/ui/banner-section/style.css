@@ -1,0 +1,41 @@
+.mySwiper {
+  width: 100%;
+  height: 300px; /* Mobil o'lchamda pastki balandlik */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (min-width: 640px) {
+  .mySwiper {
+    height: 400px; /* Kichik ekranlarda biroz balandroq qilish */
+  }
+}
+
+@media (min-width: 768px) {
+  .mySwiper {
+    height: 500px; /* Planshet o'lchamlarida balandlikni oshirish */
+  }
+}
+
+@media (min-width: 1024px) {
+  .mySwiper {
+    height: 300px; /* Katta ekranlar uchun */
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  z-index: 10;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  .swiper-slide img {
+    object-position: center center; /* Mobil o'lchamda rasmni markazga joylashtirish */
+  }
+}
