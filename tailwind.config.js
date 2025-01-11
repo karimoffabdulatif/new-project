@@ -18,6 +18,9 @@ export default {
         '41': '41px', 
         '35': '35px',
       },
+      animation: {
+        'spin-slow': 'spin 4s linear infinite',
+      },
      
     },
   },
